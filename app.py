@@ -8,23 +8,26 @@ if len(sys.argv) <= 1 or len(sys.argv) > 3:
 
 if sys.argv[1] == 'add':
     # add module
-    with open('userdata.json', 'a') as f:
-        # add the task to the json file:
+    with open('userdata.json', 'r') as f:
         print('this is add module')
-        print(f"Description: {sys.argv[2]}")
-        
+        print(f"Description: {sys.argv[2]}")        
         status = input("Status (done(1), not-done(2), in-progress(3): ")
         createdAt = time.asctime()
         updatedAt = createdAt
-
         print(f'Updated at: {updatedAt} and createdAt: {createdAt}')
 
-        # make the dictionary
+        pydict = json.load(f) # from json to python dict
+        print(pydict)
+
+        # little dict
         newtask = dict(id='3', description=sys.argv[2], status=status, createdAt=createdAt, updatedAt=updatedAt)
-    
-        # write to file    
-        json.dump(newtask, f, indent=4)
-        
+
+        # add little dict to big dict (ok)
+        pydict.append(newtask)
+
+        # from python dict to json again
+        with open('userdata.json', 'w') as f:
+            json.dump(pydict, f, indent=4)
 
 elif sys.argv[1] == 'update':
     # update module
