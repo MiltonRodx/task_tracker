@@ -1,23 +1,44 @@
 [
     {
-        "createdAt": "Fri Mar  6 13:37:59 2026",
-        "description": "Limpiar mi pieza",
-        "id": "3",
+        "id": 1,
+        "description": "lavar ropa ok",
         "status": "2",
-        "updatedAt": "Fri Mar  6 13:37:59 2026"
+        "createdAt": "Fri Mar  6 21:19:56 2026",
+        "updatedAt": "Fri Mar  6 21:21:35 2026"
     },
     {
-        "id": "3",
-        "description": "hola mundo",
-        "status": "2",
-        "createdAt": "Fri Mar  6 14:03:18 2026",
-        "updatedAt": "Fri Mar  6 14:03:18 2026"
-    },
-    {
-        "id": "3",
-        "description": "hola",
+        "id": 2,
+        "description": "dar comida al perro",
         "status": "3",
-        "createdAt": "Fri Mar  6 17:49:47 2026",
-        "updatedAt": "Fri Mar  6 17:49:47 2026"
+        "createdAt": "Fri Mar  6 21:20:08 2026",
+        "updatedAt": "Fri Mar  6 21:20:08 2026"
+    },
+    {
+        "id": 3,
+        "description": "compra a la verduleria",
+        "status": "2",
+        "createdAt": "Fri Mar  6 21:20:27 2026",
+        "updatedAt": "Fri Mar  6 21:20:27 2026"
+    },
+    {
+        "id": 4,
+        "description": "subir documentacion importante",
+        "status": "3",
+        "createdAt": "Fri Mar  6 21:20:42 2026",
+        "updatedAt": "Fri Mar  6 21:20:42 2026"
+    },
+    {
+        "id": 5,
+        "description": "arreglar el server",
+        "status": "2",
+        "createdAt": "Fri Mar  6 21:28:45 2026",
+        "updatedAt": "Fri Mar  6 21:28:45 2026"
+    },
+    {
+        "id": 6,
+        "description": "reparar server",
+        "status": "2",
+        "createdAt": "Fri Mar  6 21:31:10 2026",
+        "updatedAt": "Fri Mar  6 21:31:10 2026"
     }
 ]
